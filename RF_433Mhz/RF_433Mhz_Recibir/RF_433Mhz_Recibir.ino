@@ -21,7 +21,7 @@ void setup(){
 
 void loop()
 {   
-    char mensaje[12];
+    char mensaje[20]; // configurar la longitud máxima del mensaje a recibir (20 caracteres)
     unsigned int longitud = sizeof(mensaje);
     bool hayMensaje = radio.recv(mensaje, longitud); // el & es necesario !!!
     if (hayMensaje) { 
