@@ -3,7 +3,7 @@
 
    Borrar la librería IRRemoteRobot si existe porque colisiona con la que vamos a instalar
    (cerrar arduino, ir a la carpeta librerías y borrarla)
-   
+
    Instalar la librería IRRemote
 
    Ayuda: http://www.pcbheaven.com/userpages/RC_Protocol_and_Modulation/
@@ -26,6 +26,7 @@ void setup() {
 }
 
 void loop() {
+  // copiar los datos que llegan en la variable mensaje
   if (irrecv.decode(&mensaje)) {
     // mostrar todos los datos posibles;
     dump(&mensaje);
@@ -98,7 +99,7 @@ void dump(decode_results *results) {
 }
 
 /*
-void display(decode_results results) {
+  void display(decode_results results) {
   Serial.println(results.value, HEX);
   Serial.println(results.address, HEX);
   Serial.println(results.value, HEX);
@@ -107,7 +108,7 @@ void display(decode_results results) {
   Serial.println(results.rawlen);
   Serial.println(results.overflow);
   Serial.println("----------");
-}
+  }
 */
 
 
