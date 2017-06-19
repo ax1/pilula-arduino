@@ -14,17 +14,16 @@
 // configurar la radio
 RH_ASK radio(2000, 4, 5); // velocidad de transmisión, pin de lectura, pin de escritura
 
-void setup(){
-    Serial.begin(9600);
+void setup() {
+  Serial.begin(9600);
   if (!radio.init()) Serial.println("error en la radio");
 }
 
-void loop()
-{   
-    char mensaje[20]; // configurar la longitud máxima del mensaje a recibir (20 caracteres)
-    unsigned int longitud = sizeof(mensaje);
-    bool hayMensaje = radio.recv(mensaje, longitud); // el & es necesario !!!
-    if (hayMensaje) { 
-      Serial.println((char*)mensaje);         
-    }
+void loop() {
+  char mensaje[20]; // configurar la longitud máxima del mensaje a recibir (20 caracteres)
+  unsigned int longitud = sizeof(mensaje);
+  bool hayMensaje = radio.recv(mensaje, longitud); // recibir mensaje
+  if (hayMensaje) {
+    Serial.println((char*)mensaje);
+  }
 }

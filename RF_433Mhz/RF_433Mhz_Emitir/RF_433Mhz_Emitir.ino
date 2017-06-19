@@ -7,7 +7,7 @@
     - ATAD al pin de tranmisión (en este caso PIN 5, ver debajo)
 */
 
-#include <RH_ASK.h>
+#include <RH_ASK.h>  // objetos para comunicarse por 433 Mhz
 #include <SPI.h> // necesario para  la librería rh_ask
 . 
 // configurar la radio
