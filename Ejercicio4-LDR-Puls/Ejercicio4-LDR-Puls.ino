@@ -1,4 +1,4 @@
-int LEDPin = 13;
+int LEDPin = 11;
 int LDRPin = A0;
 int umbral = 100; //este valor lo obtenemos poniendo la mano sobre la LDR 
 

@@ -1,5 +1,5 @@
 
-int pulsador = 2;
+int pulsador = 4;
 int led= 13;
 
 void setup()
