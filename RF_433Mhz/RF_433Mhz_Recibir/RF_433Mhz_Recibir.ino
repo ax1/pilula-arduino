@@ -1,7 +1,7 @@
 
 /**
    Radio de 433Mhz para RECIBIR datos inalámbricamente
-   Instalar librería "RadioHead"
+   Instalar librería "RadioHead" (zip adjunto)
    3 pines:
     - GND a tierra
     - VCC a 5 voltios
@@ -20,7 +20,7 @@ void setup() {
 }
 
 void loop() {
-  char mensaje[20]; // configurar la longitud máxima del mensaje a recibir (20 caracteres)
+  char mensaje[30]; // configurar la longitud máxima del mensaje a recibir (20 caracteres)
   unsigned int longitud = sizeof(mensaje);
   bool hayMensaje = radio.recv(mensaje, longitud); // recibir mensaje
   if (hayMensaje) {
