@@ -8,7 +8,7 @@ Documentación y código (comentarios en castellano) para hacer diversos ejercic
 
 En resumen para el contenido de este proyecto:
 - si sólo lo vas a usar: puedes hacerlo sin preocuparte del tipo licencia
-- si vas a revender algo: verifica que no incumples ninguna de las licencias que no son MIT
+- si vas a vender algo: verifica que no incumples ninguna de las licencias que no son MIT
 
 ## Agradecimientos
 
@@ -16,6 +16,6 @@ En resumen para el contenido de este proyecto:
 
 - a R.M. y R.G. por atreverse a ser profesores del curso
 - a todos los asistentes por disfrutar mientras aprendían
-- a todos los que contribuyeron curso viese la luz
+- a todos los que contribuyeron a que el curso viese la luz
 - a las instituciones que ponen su dinero para que ocurran estas cosas
 
